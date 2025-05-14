@@ -1,168 +1,38 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lionel Messi</title>
-	<style>
-        /* Estilos Gerais */
-        body {
-        	font-family: 'Arial' sans-serif;
-        	background-color: #696969;
-        	margin: 0;
-        	padding: 0;
-        	background-color: #F0F8FF;
-    	}
-
-    	.box {
-    		height: 10px;
-    		margin: 10px;
-    	    padding: 10%;
-    		border: solid;
-    		border-color: black;
-            text-align: center;
-    	}
-
-        .contact-form button {
-            background-color: #005CA9;
-            color: #FFFFFF;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 10px;
-        }
-
-        /* Cabeçalho */
-        .header {
-            display: flex;
-            flex-direction: column;
-            background-color: #DEB887;
-            color: #000000;
-            padding: 100px;
-            text-align: center;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .contact-form button:hover {
-            background-color: #C0C0C0;
-            color: white;
-        }
-
-        .contact-form button {
-            background-color: #3e3a36;
-            color: #C0C0C0;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 10px;
-            border: black;
-        }
-
-        .nav a{
-            display: block;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 15px 20px;
-            text-decoration: none;
-            font-size: 15px;
-            border: black;
-        }
-
-        .container{
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border: 1px solid #ccc;
-            text-align: center;
-            border: solid;
-
-        }
-        .container a{
-            color: black;
-            text-decoration: none;
-            gap: 25px;
-        }
-
-        .box-border button{
-            padding: 10px;
-            text-align: center;
-            border: solid;
-        }
-
-        .header button{
-            text-align: center;
-            background-color: #000000;
-            color: black;
-        }
-        .iframe{
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            background-color: white;
-            box-border: black;
-        }
-
-        .footer{
-            padding: 10px;
-            text-align: center;
-            color: black;
-            background-color: white;
-        }
-
-    </style>
+    <title>Perfil do Aluno - SENAI Rio Das Antas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-<div class="header">
-    <h1>História de Lionel Messi</h1>
 
-    <div class="container"> 
-    <a href="#historia"><i class="">História</i></a>
-    <a href="#lances"><i class="">Lances</i></a>
-    <a href="#times"><i class="">Times</i></a>
-</div>
-</div>
+<header>
+    <h1>Pedro Miguel</h1>
+    <p>Aluno de Iniciação Profissional - Arroio Trinta - SC</p>
+</header>
 
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
 
-<div class="container">
-<h2>Conteúdo Principal</h2>
-<p>A HISTÓRIA DE LIONEL MESSI</p>
-</div>
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou um estudante dedicado, apaixonado por tecnologia e sempre buscando novos desafios. Atualmente curso Iniciação Profissional com foco em informática.</p>
+</section>
 
-<div id="historia" class="container">
-<img src="C:\xampp\htdocs\pedro\Pasta_assets\FwCfOz0XsAMhWq1.jpg" width="600"><p>Lionel Andrés Messi Cuccittini nasceu em  Rosário no dia 24/06/1987 joga futebol aos 37 anos na Argentina. Messi é jogador de futebol, que atua como atacante. Aos 7 anos, em 1994, jogando pelo clube argentino Newell’s Old Boys, de sua cidade natal, foi descoberto por um olheiro do Barcelona, da Espanha. Aos 13, fez sua estreia na Europa, firmando carreira por lá.
-Começou a deslanchar na equipe catalã em 2004, conquistando diversos títulos e quebrando alguns recordes. Permaneceu no time espanhol até 2021, quando foi comprado pelo Paris Saint-Germain, da França. Vence a Bola de Ouro, prêmio da FIFA para o melhor do mundo, por quatro anos consecutivos, de 2009 a 2012. Depois, foi novamente eleito em 2015, 2019, 2021 e 2023 totalizando oito conquistas. Também é o maior artilheiro e detentor de títulos da história do Barcelona.
-Defende a Argentina desde 2005, atuando nas Copas de 2006, 2010, 2014, 2018 e 2022.Em 2022 vence a copa do mundo pela Argentina. Em 2021, conquistou seu primeiro título com a seleção principal ao vencer a Copa América.</p>
-</div>
-<div id="lances" class="container">
-<h2>Veja alguns lances</h2>
-</div>
+<section id="projetos">
+    <h2>Projetos</h2>
+    <ul>
+        <li><a href="/calculadora">Calculadora</a></li>
+    </ul>
+</section>
 
-<div class="iframe">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/b4_PA7GsLwA?si=z6H5aJKc_L0ELnIO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-<div id="times" class="container">
-<h2>Times que jogou e gols</h2>
-
-<h2>BARCELONA</h2>
-<img src="C:\xampp\htdocs\pedro\Pasta_assets\LeoMessi20092010_pic_fcb-arsenal62.jpg" width="700">
-<p>Lionel Messi jogou no Barcelona de 2004 a 2021, marcando 672 gols.</p>
-
-<h2>PSG</h2>
-<img src="C:\xampp\htdocs\pedro\Pasta_assets\lionel-messi-comemora-apos-marcar-para-o-psg-contra-o-maccabi-haifa-pela-champions-league-1666731838458_v2_1920x1280.jpg" width="700">
-<p>Lionel Messi ficou quase dois anos pela equipe, marcando 32 gols</p>
-
-<h2>INTER DE MIAMI</h2>
-<img src="C:\xampp\htdocs\pedro\Pasta_assets\GettyImages-2155232463-e1719507664807.webp" width="700">
-<p>Messi chegou ao Inter Miami em junho de 2023 e tem contrato até dezembro de 2025, marcando 38 gols por enquanto</p>
-</div>
-
-<a href="#header">CLIQUE PARA VOLTAR</a>
-
-</div>
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Email: joao.silva@sesisenai.org.br</p>
+</section>
 </body>
 </html>
