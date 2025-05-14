@@ -1,6 +1,8 @@
-print("João recebeu seu salário de R$ 1200,00 ")
-print("mas precisa pagar C1=R$ 200,00 e C2=R$120,00) que estão atrasadas. E pagar a taxa de 2%")
+sal_joao = 1200
+c1 = 200 
+c1 += c1*0.02
+c2 = 120
+c2 += c2*0.02
 
-salario = 1200 - ((200 + 120)+(1200*0.02))
-
-print("O salario de joao é : ", salario)
+sal_joao -= c1 + c2
+print(f"O salario de Joao descontado as contas agora é: {sal_joao}")
