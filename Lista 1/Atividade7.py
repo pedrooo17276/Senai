@@ -1,11 +1,10 @@
 moedas = {
-moedas_1_centavo = int(input("Quantidade de moedas de 1 centavo: ")),
-moedas_5_centavos = int(input("Quantidade de moedas de 5 centavos: ")),
-moedas_10_centavos = int(input("Quantidade de moedas de 10 centavos: ")),
-moedas_25_centavos = int(input("Quantidade de moedas de 25 centavos: ")),
-moedas_50_centavos = int(input("Quantidade de moedas de 50 centavos: ")),
-moedas_1_real = int(input("Quantidade de moedas de 1 real: "))
+0.01: int(input("Moedas de 1 centavo: ")),
+0.05: int(input("Moedas de 5 centavos: ")),
+0.10: int(input("Moedas de 10 centavos: ")),
+0.25: int(input("Moedas de 25 centavos: ")),
+0.50: int(input("Moedas de 50 centavos: ")),
+1.00: int(input("Moedas de 1 real: "))
 }
 total = sum(valor * qtd for valor, qtd in moedas.items())
-print(f"Valor total economizado: R$ {total}")
-
+print(f"O valor total economizado em reais é de: R${total}")
