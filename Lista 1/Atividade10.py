@@ -1,5 +1,3 @@
-python
-CopiarEditar
 import math
 raio = float(input("Raio da base (m): "))
 altura = float(input("Altura (m): "))
